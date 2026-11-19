@@ -4,8 +4,10 @@ This repository contains my Java practice code and exercises as I learn the lang
 
 ## Folder Structure
 
-* `1st/` - Basic setup and introductory Java programs (`demo.java`)
-* `Variables & Datatypes/` - Practice programs covering variables and data types (`data.java`)
+- `1st/` - Basic setup and introductory Java programs (`demo.java`)
+- `Variables & Datatypes/` - Practice programs covering variables and data types (`data.java`)
+- `Type Conversion/` - Practice programs covering Type Conversion(`type.java`, `sec.java`)
+- `Oprators` - Practice progtams covering Oprators (`arithmetic,java`, `bitwise.java`, `logical.java`, `relational.java`)
 
 ## How to Run
 
