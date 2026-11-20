@@ -1,0 +1,304 @@
+
+ 
+Question 1: Print Square Pattern 
+Write a Java program to print a square pattern of stars (e.g., 4x4).
+ 
+import java.util.Scanner;
+
+public class Question1 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of rows/columns: ");
+        int n = sc.nextInt();
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+ 
+Question 2: Print Perpendicular Line 
+Write a Java program to print a T-shaped perpendicular star pattern
+(e.g., 5 stars across the top and 4 stars down the center).
+ 
+import java.util.Scanner;
+
+public class Question2 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of stars (odd number like 5): ");
+        int n = sc.nextInt();
+
+        for (int i = 1; i <= n; i++) {
+            if (i == 1) {
+                for (int j = 1; j <= n; j++) {
+                    System.out.print("* ");
+                }
+            } else {
+                for (int s = 1; s <= n / 2; s++) {
+                    System.out.print("  ");
+                }
+                System.out.print("*");
+            }
+            System.out.println();
+        }
+    }
+}
+
+ 
+Question 3: Print Right Triangle Pattern 
+Write a Java program to print a left-aligned right triangle (e.g., 5 rows).
+ 
+import java.util.Scanner;
+
+public class Question3 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of rows: ");
+        int rows = sc.nextInt();
+
+        for (int i = 1; i <= rows; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+ 
+Question 4: Print Inverted Right Triangle 
+Write a Java program to print an inverted right triangle (e.g., 5 rows).
+ 
+import java.util.Scanner;
+
+public class Question4 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of rows: ");
+        int rows = sc.nextInt();
+
+        for (int i = rows; i >= 1; i--) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+ 
+Question 5: Print Number Square Pattern 
+Write a Java program to print a number square where each row repeats
+its row number (e.g., 1 1 1 1 / 2 2 2 2 / 3 3 3 3 / 4 4 4 4).
+ 
+import java.util.Scanner;
+
+public class Question5 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of rows: ");
+        int n = sc.nextInt();
+
+        for (int i = 1; i <= n; i++) {
+            for (int j = 1; j <= n; j++) {
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+ 
+Question 6: Print Increasing Number Triangle 
+Write a Java program to print:
+1
+1 2
+1 2 3
+1 2 3 4
+1 2 3 4 5
+ 
+import java.util.Scanner;
+
+public class Question6 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of rows: ");
+        int rows = sc.nextInt();
+
+        for (int i = 1; i <= rows; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(j + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+ 
+Question 7: Print Continuous Number Triangle 
+Write a Java program to print continuous numbers (e.g., 4 rows:
+1 / 2 3 / 4 5 6 / 7 8 9 10).
+ 
+import java.util.Scanner;
+
+public class Question7 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of rows: ");
+        int rows = sc.nextInt();
+        int num = 1;
+
+        for (int i = 1; i <= rows; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(num + " ");
+                num++;
+            }
+            System.out.println();
+        }
+    }
+}
+
+ 
+Question 8: Print Pyramid Pattern 
+Write a Java program to print a centered pyramid with proper spacing.
+ 
+import java.util.Scanner;
+
+public class Question8 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of rows: ");
+        int rows = sc.nextInt();
+
+        for (int i = 1; i <= rows; i++) {
+            for (int s = 1; s <= rows - i; s++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+ 
+Question 9: Print Inverted Pyramid 
+Write a Java program to print a centered inverted pyramid.
+ 
+import java.util.Scanner;
+
+public class Question9 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of rows: ");
+        int rows = sc.nextInt();
+
+        for (int i = rows; i >= 1; i--) {
+            for (int s = 1; s <= rows - i; s++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+ 
+Question 10: Print Half Pyramid with Same Numbers 
+Write a Java program to print:
+1
+2 2
+3 3 3
+4 4 4 4
+5 5 5 5 5
+ 
+import java.util.Scanner;
+
+public class Question10 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of rows: ");
+        int rows = sc.nextInt();
+
+        for (int i = 1; i <= rows; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print(i + " ");
+            }
+            System.out.println();
+        }
+    }
+}
+
+ 
+Question 11: Print Binary Pattern
+Write a Java program to print:
+1
+0 1
+1 0 1
+0 1 0 1
+1 0 1 0 1
+ 
+import java.util.Scanner;
+
+public class Question11 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of rows: ");
+        int rows = sc.nextInt();
+
+        for (int i = 1; i <= rows; i++) {
+            for (int j = 1; j <= i; j++) {
+                if ((i + j) % 2 == 0) {
+                    System.out.print("1 ");
+                } else {
+                    System.out.print("0 ");
+                }
+            }
+            System.out.println();
+        }
+    }
+}
+
+ 
+Question 12: Print Diamond Pattern
+Write a Java program to print a full centered diamond pattern.
+ 
+import java.util.Scanner;
+
+public class Question12 {
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Enter number of rows for upper half: ");
+        int rows = sc.nextInt();
+
+        // Upper half
+        for (int i = 1; i <= rows; i++) {
+            for (int s = 1; s <= rows - i; s++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+
+        // Lower half
+        for (int i = rows - 1; i >= 1; i--) {
+            for (int s = 1; s <= rows - i; s++) {
+                System.out.print(" ");
+            }
+            for (int j = 1; j <= i; j++) {
+                System.out.print("* ");
+            }
+            System.out.println();
+        }
+    }
+}
